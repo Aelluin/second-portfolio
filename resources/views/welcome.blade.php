@@ -6,16 +6,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Marvel HTML Bootstrap 4 Template</title>
+    <title>Laurence Ramirez</title>
 
     <link rel="stylesheet" href="{{url('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{url('assets/css/unicons.css') }}">
     <link rel="stylesheet" href="{{url('assets/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{url('assets/css/owl.theme.default.min.css') }}">
 
+
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="{{url('assets/css/tooplate-style.css') }}">
     <script src="http://localhost:35729/livereload.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
 
 
 
@@ -61,7 +64,7 @@ https://www.tooplate.com/view/2115-marvel
                     <div class="ml-lg-4">
                       <div class="color-mode d-lg-flex justify-content-center align-items-center">
                         <i class="color-mode-icon"></i>
-                        Color mode
+
                       </div>
                     </div>
                 </ul>
@@ -106,50 +109,102 @@ https://www.tooplate.com/view/2115-marvel
     </section>
 
     <!-- PROJECTS -->
+
+
     <section class="project py-5" id="project">
         <div class="container">
 
                 <div class="row">
                   <div class="col-lg-11 text-center mx-auto col-12">
 
-                      <div class="col-lg-8 mx-auto">
-                        <h2>Things I have designed for digital media agencies</h2>
+<style>img {
+    border-radius: 30px;
+}
+
+section.recent-work h1 {
+    display: flex;
+    text-align: center;
+    margin: 5rem 0 8rem 0;
+    width: 65%;
+}
+
+section.recent-work .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    color: #474559;
+}
+
+
+
+section.recent-work .projects .project .action {
+    display: flex;
+    gap: 2rem;
+}
+
+section.recent-work .projects .project .action a {
+    color: var(--color-golden-brown);
+}
+
+section.recent-work .projects .project .action a:hover {
+    text-decoration: underline;
+}
+</style>
+                        <h2>Some of the projects I did (none lol)</h2>
                       </div>
+                      <section class="recent-work" id="portfolio">
+                        <div class="container">
+                            <h1></h1>
+                            <div class="projects">
+                                <div class="project">
+                                    <div class="thumbnail">
+                                        <img src="{{url('assets/images/lazy.gif') }}">
 
-                      <div class="owl-carousel owl-theme">
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="{{url('assets/images/project/project-image01.png" class="img-fluid" alt="project image') }}">
-                          </div>
+                                    </div>
+                                    <h2>Project 1</h2>
+                                    <p>The time has not yet come for this person's corner of the night sky to light up.</p>
+                                    <div class="action">
+                                        <a href="https://github.com/Aelluin" target="blank">GitHub</a>
+                                        <a href="https://c.tenor.com/RYaBX7KzNp8AAAAC/lazy-unproductive.gif" target="blank">Live Demo</a>
+                                    </div>
+                                </div>
+
+                                <div class="project">
+                                    <div class="thumbnail">
+                                        <img src="{{url('assets/images/lazy.gif') }}">
+
+                                    </div>
+                                    <h2>Project 2</h2>
+                                    <p>The time has not yet come for this person's corner of the night sky to light up.</p>
+                                    <div class="action">
+                                        <a href="https://github.com/Aelluin" target="blank">GitHub</a>
+                                        <a href="https://c.tenor.com/RYaBX7KzNp8AAAAC/lazy-unproductive.gif" target="blank">Live Demo</a>
+                                    </div>
+                                </div>
+
+                                <div class="project">
+                                    <div class="thumbnail">
+                                        <img src="{{url('assets/images/lazy.gif') }}">
+
+                                    </div>
+                                    <h2>Project 3</h2>
+                                    <p>The time has not yet come for this person's corner of the night sky to light up.</p>
+                                    <div class="action">
+                                        <a href="https://github.com/Aelluin" target="blank">GitHub</a>
+                                        <a href="https://c.tenor.com/RYaBX7KzNp8AAAAC/lazy-unproductive.gif" target="blank">Live Demo</a>
+                                    </div>
+                                </div>
+                            </section>
+                            </div>
                         </div>
 
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="{{url('assets/images/project/project-image02.png" class="img-fluid" alt="project image') }}">
-                          </div>
-                        </div>
 
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="{{url('assets/images/project/project-image03.png" class="img-fluid" alt="project image') }}">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="{{url('assets/images/project/project-image04.png" class="img-fluid" alt="project image') }}">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="{{url('assets/images/project/project-image05.png" class="img-fluid" alt="project image') }}">
-                          </div>
-                        </div>
-                      </div>
+                    <!-- ================================= END OF PORTFOLIO =============================== -->
 
                   </div>
                 </div>
+
+
         </div>
     </section>
 
@@ -159,67 +214,68 @@ https://www.tooplate.com/view/2115-marvel
             <div class="row">
 
                 <div class="col-lg-6 col-12">
-                  <h2 class="mb-4">Experiences</h2>
+                  <h2 class="mb-4">Education</h2>
 
                     <div class="timeline">
                         <div class="timeline-wrapper">
                              <div class="timeline-yr">
-                                  <span>2019</span>
+                                  <span>Present</span>
                              </div>
                              <div class="timeline-info">
-                                  <h3><span>Project Manager</span><small>Best Studio</small></h3>
-                                  <p>Proin ornare non purus ut rutrum. Nulla facilisi. Aliquam laoreet libero ac pharetra feugiat. Cras ac fermentum nunc, a faucibus nunc.</p>
+                                  <h3><span>4th Year College Student</span></h3>
+                                  <p>I am currently taking Bachelor of Science in Information Technology (BSIT) in Universidad de Dagupan (UdD).</p>
                              </div>
                         </div>
 
                         <div class="timeline-wrapper">
                             <div class="timeline-yr">
-                                <span>2018</span>
+                                <span>2021</span>
                             </div>
                             <div class="timeline-info">
-                                <h3><span>UX Designer</span><small>Digital Ace</small></h3>
-                                <p>Fusce rutrum augue id orci rhoncus molestie. Nunc auctor dignissim lacus vel iaculis.</p>
+                                <h3><span>Senior High School</span></h3>
+                                <p>I graduated Senior High School (SHS) in Pangasinan National High School (PNHS) taking Technical-Vocational-Livehood (TVL) Track and Information Communication Technology (ICT) Strand.</p>
                             </div>
                         </div>
 
                         <div class="timeline-wrapper">
                             <div class="timeline-yr">
-                                <span>2016</span>
+                                <span>2019</span>
                             </div>
                             <div class="timeline-info">
-                                <h3><span>UI Freelancer</h3>
-                                <p>Sed fringilla vitae enim sit amet cursus. Sed cursus dictum tortor quis pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                <h3><span>Junior High School</h3>
+                                <p>I studied Information Communication Technology (ICT) back when i'm in my Junior High School (JHS) days.</p>
                             </div>
                         </div>
 
                         <div class="timeline-wrapper">
                             <div class="timeline-yr">
-                                <span>2014</span>
+                                <span>2015</span>
                             </div>
                             <div class="timeline-info">
-                                <h3><span>Junior Designer<small>Crafted Co.</small></h3>
-                                <p>Cras scelerisque scelerisque condimentum. Nullam at volutpat mi. Nunc auctor ipsum eget magna consequat viverra.</p>
+                                <h3><span>Elementary</h3>
+                                <p>I finished Elementary with little knowledge on computers, because I used to do my schoolworks in computer shop.</p>
                             </div>
                         </div>
 
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
+
+                 <div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Work Experiences</h2>
 
                     <div class="timeline">
                         <div class="timeline-wrapper">
                              <div class="timeline-yr">
-                                  <span>2017</span>
+                                  <span>Present</span>
                              </div>
                              <div class="timeline-info">
-                                  <h3><span>Mobile Web</span><small>Master Design</small></h3>
-                                  <p>Please tell your friends about Tooplate website. That would be very helpful. We need your support.</p>
+                                  <h3><span>None</span></h3>
+                                  <p>I have no experience at all.</p>
                              </div>
                         </div>
 
-                        <div class="timeline-wrapper">
+                       <!---- <div class="timeline-wrapper">
                             <div class="timeline-yr">
                                 <span>2015</span>
                             </div>
@@ -237,7 +293,7 @@ https://www.tooplate.com/view/2115-marvel
                                 <h3><span>Artwork Design</span><small>New Art School</small></h3>
                                 <p>You can freely use Tooplate's templates for your business or personal sites. You cannot redistribute this template without a permission.</p>
                             </div>
-                        </div>
+                        </div>--->
 
                     </div>
                 </div>
@@ -302,18 +358,74 @@ https://www.tooplate.com/view/2115-marvel
     </section>
 
     <!-- FOOTER -->
-     <footer class="footer py-5">
-          <div class="container">
-               <div class="row">
+    <style>footer {
+        padding-top: 5rem;
+    }
 
-                    <div class="col-lg-12 col-12">
-                        <p class="copyright-text text-center">Copyright &copy; 2019 Company Name . All rights reserved</p>
-                        <p class="copyright-text text-center">Designed by <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a></p>
-                    </div>
+    footer .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-               </div>
-          </div>
-     </footer>
+    footer .socials ul {
+        display: flex;
+        gap: 3rem;
+    }
+
+    footer .container ul a {
+        color: var(--color-dark);
+        transition: var(--transition);
+    }
+
+    footer .container ul a:hover {
+        color: var(--color-primary);
+    }
+
+    footer .container .socials {
+        display: flex;
+        gap: 3rem;
+        padding-top: 4rem;
+    }
+
+    footer .container .socials a {
+
+        color: #474559;
+        padding: 0.8rem;
+        border-radius: 50%;
+        transition: var(--transition);
+    }
+
+    footer .container .socials a:hover {
+        background: var(--color-golden-brown);
+        color: var(--color-white);
+    }
+
+    footer .copyright {
+
+        color: #474559;
+        text-align: center;
+        margin-top: -0rem;
+        padding: 2rem 0;
+        padding-bottom: 3rem;
+        font-size: 0.8;
+    }</style>
+    <footer>
+        <div class="container">
+            <div class="socials">
+                <a href="https://www.facebook.com/teresita.ramirez.507" targets="_blank"><i class="uil uil-facebook-f"></i></a>
+                <a href="https://github.com/Aelluin" targets="_blank"><i class="uil uil-github"></i></a>
+                <a href="https://www.instagram.com/renziusss/" targets="_blank"><i class="uil uil-instagram"></i></a>
+                <a href="https://twitter.com/Renziee02" targets="_blank"><i class="uil uil-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCk_gEQrf-50CQe7nk0TTkJA" targets="_blank"><i class="uil uil-youtube"></i></a>
+
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2022 Laurence Ramirez. Made with &#10084; in Pangasinan, Philippines.
+
+    </footer>
+
 
     <script src="{{url('assets/js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{url('assets/js/popper.min.js') }}"></script>
