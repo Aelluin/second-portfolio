@@ -89,6 +89,7 @@ https://www.tooplate.com/view/2115-marvel
                                     <span class="animated-item">Laurence Ramirez</span>
                                     <span class="animated-item">Aspiring Web Developer</span>
                                     <span class="animated-item">Coding Enthusiast</span>
+
                                 </div>
                         </h1>
 
@@ -122,9 +123,59 @@ https://www.tooplate.com/view/2115-marvel
 
 <style>
 
+/* intro modified style */
+.about {
+    padding: 5rem 0; /* Increase padding top and bottom for more vertical space */
+}
+
+.about .container {
+    max-width: 1200px; /* Increase container width for more horizontal space */
+    margin: 0 auto; /* Center the container */
+}
+
+.about .row {
+    flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+}
+
+.about .about-text {
+    margin-right: 2rem; /* Add margin to space out text and image */
+}
+
+.about .about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-image img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto;    /* Maintain aspect ratio */
+}
+
+/* Font sizes for better readability */
+.about h1 {
+    font-size: 3rem; /* Increase font size for the main heading */
+}
+
+.about p {
+    font-size: 1.25rem; /* Larger text for better readability */
+}
+
+.custom-btn-group .btn {
+    font-size: 1.125rem; /* Increase font size for buttons */
+}
+/* end of intro modified style */
+
+
+
+.thumbnail img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto;    /* Maintain aspect ratio */
+}
+
 
 .img-fluid {
-    transform: scale(0.78);
+    transform: scale(0.7);
     border: 5px solid #ffc200;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
@@ -133,18 +184,22 @@ https://www.tooplate.com/view/2115-marvel
 
 
 .img-fluid:hover {
-    transform: scale(0.85);
+    transform: scale(0.78);
 
 
 }
 
 .thumbnail {
     transition: transform 0.3s ease;
+    max-width: 31rem;
+    min-width: 31rem;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
 
 }
 
 .thumbnail:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 
 }
 img {
@@ -178,8 +233,12 @@ section.recent-work .projects .project .action {
 section.recent-work .projects .project .action a:hover {
     text-decoration: underline;
 }
+
+.project-title {
+    font-size: 2.9rem;
+}
 </style>
-                        <h2>Some of the projects I did (none lol)</h2>
+                        <h2 class="project-title">Some of the projects I did:</h2>
                       </div>
                       <section class="recent-work" id="portfolio">
                         <div class="container">
@@ -187,7 +246,7 @@ section.recent-work .projects .project .action a:hover {
                             <div class="projects">
                                 <div class="project">
                                     <div class="thumbnail">
-                                        <img src="{{url('assets/images/lazy.gif') }}">
+                                        <img src="{{url('assets/images/blogsys.png') }}">
 
                                     </div>
                                     <h2>Simple Blogging Page</h2>
