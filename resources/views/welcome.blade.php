@@ -95,10 +95,11 @@ https://www.tooplate.com/view/2115-marvel
 
                         <p>21 year old programming enthusiast who's currently pursuing Bachelor of Science in Information Technology.</p>
 
-                        <div class="custom-btn-group mt-4">
+                       <!-- <div class="custom-btn-group mt-4">
                           <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
                           <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">idk kung ano lalagay ko dito</a>
-                        </div>
+                        </div>--->
+
                     </div>
                 </div>
 
@@ -246,14 +247,15 @@ section.recent-work .projects .project .action a:hover {
                             <div class="projects">
                                 <div class="project">
                                     <div class="thumbnail">
-                                        <img src="{{url('assets/images/blogsys.png') }}">
+                                        <a href="{{url('assets/images/blogsys.png') }}">
+                                        <img src="{{url('assets/images/blogsys.png') }}"></a>
 
                                     </div>
-                                    <h2>Simple Blogging Page</h2>
+                                    <h2>Blog Page (unfinished)</h2>
                                     <p>This project is still on going, but yeah it is an web-based blog page and i'm still figuring out how to do a live demo of this project.</p>
                                     <div class="action">
-                                        <a href="https://github.com/Aelluin" target="blank">GitHub</a>
-                                        <a href="https://c.tenor.com/RYaBX7KzNp8AAAAC/lazy-unproductive.gif" target="blank">Live Demo</a>
+                                        <a href="https://github.com/Aelluin/post-final-project" target="blank">View Repository</a>
+                                        <a href="{{url('assets/images/blogsys.png') }}" target="blank">Live Demo</a>
                                     </div>
                                 </div>
 
@@ -265,7 +267,7 @@ section.recent-work .projects .project .action a:hover {
                                     <h2>Project 2</h2>
                                     <p>The time has not yet come for this person's corner of the night sky to light up.</p>
                                     <div class="action">
-                                        <a href="https://github.com/Aelluin" target="blank">GitHub</a>
+                                        <a href="https://github.com/Aelluin" target="blank">View Repository</a>
                                         <a href="https://c.tenor.com/RYaBX7KzNp8AAAAC/lazy-unproductive.gif" target="blank">Live Demo</a>
                                     </div>
                                 </div>
@@ -279,7 +281,7 @@ section.recent-work .projects .project .action a:hover {
                                     <h2>Project 3</h2>
                                     <p>The time has not yet come for this person's corner of the night sky to light up.</p>
                                     <div class="action">
-                                        <a href="https://github.com/Aelluin" target="blank">GitHub</a>
+                                        <a href="https://github.com/Aelluin" target="blank">View Repository</a>
                                         <a href="https://c.tenor.com/RYaBX7KzNp8AAAAC/lazy-unproductive.gif" target="blank">Live Demo</a>
                                     </div>
 
@@ -294,7 +296,7 @@ section.recent-work .projects .project .action a:hover {
                                     <h2>Project 4</h2>
                                     <p>The time has not yet come for this person's corner of the night sky to light up.</p>
                                     <div class="action">
-                                        <a href="https://github.com/Aelluin" target="blank">GitHub</a>
+                                        <a href="https://github.com/Aelluin" target="blank">View Repository</a>
                                         <a href="https://c.tenor.com/RYaBX7KzNp8AAAAC/lazy-unproductive.gif" target="blank">Live Demo</a>
                                     </div>
 
