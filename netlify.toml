@@ -3,8 +3,8 @@
 
 [build]
 
-  command = "npm run build"
-  publish = "/"
+  command = "npm run prod"
+  publish = "public/"
 
 
 [[redirects]]

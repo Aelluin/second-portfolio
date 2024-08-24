@@ -9,7 +9,7 @@ export default defineConfig({
         }),
     ],
     build: {
-        outDir: "/", // Change this if necessary
+        outDir: "public/", // Change this if necessary
         emptyOutDir: true, // This option will clean the output directory before building
     },
 });
