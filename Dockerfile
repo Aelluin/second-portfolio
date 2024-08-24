@@ -1,29 +1,24 @@
-# Use the official PHP image from the Docker Hub
-FROM php:8.2-fpm
+FROM php:8.0-cli
 
-# Install system dependencies
+# Install any dependencies you need
 RUN apt-get update && apt-get install -y libpng-dev libjpeg-dev libfreetype6-dev \
-    libzip-dev unzip git
-
-# Install PHP extensions
-RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install gd \
-    && docker-php-ext-install zip
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install gd
 
 # Set the working directory
-WORKDIR /var/www
+WORKDIR /app
 
-# Copy application files
-COPY . /var/www
+# Copy the application code
+COPY . .
 
-# Install Composer
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+# Install Composer (if needed)
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install PHP dependencies
-RUN composer install --no-dev --optimize-autoloader
+RUN composer install
 
-# Expose port 9000
-EXPOSE 9000
+# Expose the port
+EXPOSE 8000
 
-# Start PHP-FPM server
-CMD ["php-fpm"]
+# Start the application
+CMD ["php", "artisan", "serve", "--host", "0.0.0.0", "--port", "8000"]
