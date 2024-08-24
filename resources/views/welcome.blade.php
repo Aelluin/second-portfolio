@@ -20,7 +20,10 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 
-
+    <link rel="apple-touch-icon" sizes="180x180" href="{{url('assets/images/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url('assets/images/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url('assets/images/favicon-16x16.png')}}">
+    <link rel="manifest" href="{{url('assets/images/site.webmanifest')}}">
 
 <!--
 
@@ -35,7 +38,7 @@ https://www.tooplate.com/view/2115-marvel
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Laurence {/}</a>
+            <a class="navbar-brand"><i class='uil uil-user'></i> Laurence {/}</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -130,7 +133,7 @@ https://www.tooplate.com/view/2115-marvel
 
 
 .img-fluid:hover {
-    transform: scale(0.9);
+    transform: scale(0.85);
 
 
 }
