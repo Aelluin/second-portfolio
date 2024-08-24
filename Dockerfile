@@ -1,18 +1,24 @@
-FROM php:8.0-cli
-
-# Install any dependencies you need
-RUN apt-get update && apt-get install -y libpng-dev libjpeg-dev libfreetype6-dev \
-    && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install gd
+# Use an official PHP 8.2 runtime as a parent image
+FROM php:8.2-cli
 
 # Set the working directory
 WORKDIR /app
 
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
+    git \
+    unzip \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install gd
+
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
 # Copy the application code
 COPY . .
-
-# Install Composer (if needed)
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install PHP dependencies
 RUN composer install
@@ -20,5 +26,5 @@ RUN composer install
 # Expose the port
 EXPOSE 8000
 
-# Start the application
+# Command to run your PHP application
 CMD ["php", "artisan", "serve", "--host", "0.0.0.0", "--port", "8000"]
