@@ -9,6 +9,6 @@ export default defineConfig({
         }),
     ],
     build: {
-        outDir: "public/build", // Set the output directory to 'public/build'
+        outDir: "dist", // Ensure Vite outputs to 'dist'
     },
 });

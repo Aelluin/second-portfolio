@@ -3,6 +3,4 @@ PHP_VERSION = "8.2"
 
 [build]
 command = "npm run build"
-publish = "public/build"
-
-
+publish = "dist"
