@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Poetsen One
+- Font Author: Copyright (c) 2012, Pablo Impallari (www.impallari.com|impallari@gmail.com) and Rodrigo Fuenzalida (www.rfuenzalida.com), with Reserved Font Name Poetsen.
+- Font Source: https://fonts.gstatic.com/s/poetsenone/v3/ke8hOgIaMUB37xCgvCntWtIvq_KREbG9.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
