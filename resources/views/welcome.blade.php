@@ -100,7 +100,7 @@ https://www.tooplate.com/view/2115-marvel
 
                 <div class="col-lg-5 col-md-12 col-12">
                     <div class="about-image svg">
-                        <img src="{{url('assets/images/pfppp.png') }}" class="img-fluid" >
+                        <img src="{{url('assets/images/portfpic.png') }}" class="img-fluid" >
                     </div>
                 </div>
 
@@ -117,14 +117,41 @@ https://www.tooplate.com/view/2115-marvel
                 <div class="row">
                   <div class="col-lg-11 text-center mx-auto col-12">
 
-<style>img {
+<style>
+
+
+.img-fluid {
+    transform: scale(0.78);
+    border: 5px solid #ffc200;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.img-fluid:hover {
+    transform: scale(0.9);
+
+
+}
+
+.thumbnail {
+    transition: transform 0.3s ease;
+
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+
+}
+img {
     border-radius: 30px;
 }
 
 section.recent-work h1 {
     display: flex;
     text-align: center;
-    margin: 5rem 0 8rem 0;
+    margin: 2rem 0 4rem 0;
     width: 65%;
 }
 
@@ -133,6 +160,7 @@ section.recent-work .projects {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     color: #474559;
+
 }
 
 
@@ -142,9 +170,7 @@ section.recent-work .projects .project .action {
     gap: 2rem;
 }
 
-section.recent-work .projects .project .action a {
-    color: var(--color-golden-brown);
-}
+
 
 section.recent-work .projects .project .action a:hover {
     text-decoration: underline;
@@ -161,8 +187,8 @@ section.recent-work .projects .project .action a:hover {
                                         <img src="{{url('assets/images/lazy.gif') }}">
 
                                     </div>
-                                    <h2>Project 1</h2>
-                                    <p>The time has not yet come for this person's corner of the night sky to light up.</p>
+                                    <h2>Simple Blogging Page</h2>
+                                    <p>This project is still on going, but yeah it is an web-based blog page and i'm still figuring out how to do a live demo of this project.</p>
                                     <div class="action">
                                         <a href="https://github.com/Aelluin" target="blank">GitHub</a>
                                         <a href="https://c.tenor.com/RYaBX7KzNp8AAAAC/lazy-unproductive.gif" target="blank">Live Demo</a>
@@ -187,12 +213,29 @@ section.recent-work .projects .project .action a:hover {
                                         <img src="{{url('assets/images/lazy.gif') }}">
 
                                     </div>
+
                                     <h2>Project 3</h2>
                                     <p>The time has not yet come for this person's corner of the night sky to light up.</p>
                                     <div class="action">
                                         <a href="https://github.com/Aelluin" target="blank">GitHub</a>
                                         <a href="https://c.tenor.com/RYaBX7KzNp8AAAAC/lazy-unproductive.gif" target="blank">Live Demo</a>
                                     </div>
+
+                                </div>
+
+                                <div class="project">
+                                    <div class="thumbnail">
+                                        <img src="{{url('assets/images/lazy.gif') }}">
+
+                                    </div>
+
+                                    <h2>Project 4</h2>
+                                    <p>The time has not yet come for this person's corner of the night sky to light up.</p>
+                                    <div class="action">
+                                        <a href="https://github.com/Aelluin" target="blank">GitHub</a>
+                                        <a href="https://c.tenor.com/RYaBX7KzNp8AAAAC/lazy-unproductive.gif" target="blank">Live Demo</a>
+                                    </div>
+
                                 </div>
                             </section>
                             </div>
@@ -304,58 +347,36 @@ section.recent-work .projects .project .action a:hover {
 
     <!-- CONTACT -->
     <section class="contact py-5" id="contact">
-      <div class="container">
-        <div class="row">
+        <div class="container">
+          <div class="row justify-content-center align-items-center"> <!-- Center the row -->
+            <div class="col-lg-8 col-12"> <!-- Adjusted width to a centered column -->
+              <div class="contact-form text-center"> <!-- Center the content inside the form -->
+                <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
-          <div class="col-lg-5 mr-lg-5 col-12">
-            <div class="google-map w-100">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12088.558402180099!2d-73.99373482142036!3d40.75895421922642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2smm!4v1549875377188" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+                <form action="" method="get">
+                  <div class="row">
+                    <div class="col-lg-6 col-12">
+                      <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                    </div>
 
-            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
-                <div class="contact-info-item">
-                  <h3 class="mb-3 text-white">Say hello</h3>
-                  <p class="footer-text mb-0">010 020 0960</p>
-                  <p><a href="mailto:hello@company.co">hello@company.co</a></p>
-                </div>
+                    <div class="col-lg-6 col-12">
+                      <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                    </div>
 
-                <ul class="social-links">
-                     <li><a href="#" class="uil uil-dribbble" data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
-                     <li><a href="#" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
-                     <li><a href="#" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
-                </ul>
-            </div>
-          </div>
+                    <div class="col-12">
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                    </div>
 
-          <div class="col-lg-6 col-12">
-            <div class="contact-form">
-              <h2 class="mb-4">Interested to work together? Let's talk</h2>
-
-              <form action="" method="get">
-                <div class="row">
-                  <div class="col-lg-6 col-12">
-                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                    <div class="mx-auto col-lg-5 col-12"> <!-- Center the submit button -->
+                      <input type="submit" class="form-control submit-btn" value="Send Button">
+                    </div>
                   </div>
-
-                  <div class="col-lg-6 col-12">
-                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
-                  </div>
-
-                  <div class="col-12">
-                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
-                  </div>
-
-                  <div class="ml-lg-auto col-lg-5 col-12">
-                    <input type="submit" class="form-control submit-btn" value="Send Button">
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
     <!-- FOOTER -->
     <style>footer {
@@ -422,7 +443,7 @@ section.recent-work .projects .project .action a:hover {
             </div>
         </div>
         <div class="copyright">
-            &copy; 2022 Laurence Ramirez. Made with &#10084; in Pangasinan, Philippines.
+            &copy; 2024 Laurence Ramirez. Made with &#10084; in Pangasinan, Philippines.
 
     </footer>
 
