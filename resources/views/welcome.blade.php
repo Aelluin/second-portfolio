@@ -7,6 +7,7 @@
     <meta name="author" content="">
 
     <title>Laurence Ramirez</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <link rel="stylesheet" href="{{url('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{url('assets/css/unicons.css') }}">
